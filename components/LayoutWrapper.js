@@ -6,8 +6,13 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 const LayoutWrapper = ({ children }) => {
+  const router = useRouter()
+  const [selectedLink, setSelectedLink] = useState(router.pathname)
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
@@ -34,9 +39,18 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 hover:text-primary-500 focus:text-primary-500 dark:text-gray-100 sm:p-4"
+                  onClick={() => setSelectedLink(link.href)}
+                  className={`relative p-1 font-medium  hover:text-primary-500 focus:text-primary-500 dark:text-gray-100 sm:p-4 ${
+                    selectedLink == link.href ? 'text-primary-500' : 'text-gray-900'
+                  }`}
                 >
                   {link.title}
+                  {selectedLink == link.href ? (
+                    <motion.div
+                      layoutId="underline"
+                      className="absolute top-3 left-0 h-7 w-full bg-slate-200 rounded-md -z-10"
+                    />
+                  ) : null}
                 </Link>
               ))}
             </div>
