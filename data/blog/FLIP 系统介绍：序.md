@@ -1,7 +1,7 @@
 ---
 title: FLIP 系统介绍：序
 date: '2022-08-08'
-tags: ['FLIP']
+tags: ['FLIP', 'animation', '动画', '性能', '渲染']
 draft: false
 summary: 'FLIP 动画的系统性介绍的序章'
 ---
