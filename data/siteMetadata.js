@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'stella100np`s Advanced FE blog',
   author: 'Takasaki Chidori',
   headerTitle: 'Advanced FE blog',
-  description: 'intro',
+  description: 'All the latest web tech, straight from the advanced front-end engineer.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
