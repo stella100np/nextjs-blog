@@ -56,6 +56,11 @@ export default function Home({ posts }) {
                     <h2 className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-200 pt-8 lg:pt-0">
                       {title}
                     </h2>
+                    <div className="flex flex-wrap sr-only">
+                      {tags.map((tag) => (
+                        <Tag key={tag} text={tag} />
+                      ))}
+                    </div>
 
                     <div className="mt-2 mb-4 prose prose-slate prose-a:relative prose-a:z-10 dark:prose-dark line-clamp-2">
                       <p> {summary}</p>
