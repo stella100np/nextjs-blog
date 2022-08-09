@@ -71,6 +71,12 @@ module.exports = withBundleAnalyzer({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
+    config.plugins.push(
+      require('unplugin-icons/webpack')({
+        compiler: 'jsx',
+        jsx: 'react',
+      })
+    )
 
     if (!dev && !isServer) {
       // Replace React with Preact only in client production build

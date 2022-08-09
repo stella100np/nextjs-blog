@@ -1,11 +1,13 @@
-import Mail from './mail.svg'
-import Github from './github.svg'
+import IconGithub from '~icons/line-md/github-loop.jsx'
+import IconEmail from '~icons/line-md/email.jsx'
+import IconDiscord from '~icons/line-md/discord.jsx'
 
 // Icons taken from: https://simpleicons.org/
 
 const components = {
-  mail: Mail,
-  github: Github,
+  mail: IconEmail,
+  github: IconGithub,
+  discord: IconDiscord,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

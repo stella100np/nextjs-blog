@@ -40,15 +40,15 @@ const LayoutWrapper = ({ children }) => {
                   key={link.title}
                   href={link.href}
                   onClick={() => setSelectedLink(link.href)}
-                  className={`relative p-1 font-medium  hover:text-primary-500 focus:text-primary-500 dark:text-gray-100 sm:p-4 ${
-                    selectedLink == link.href ? 'text-primary-500' : 'text-gray-900'
+                  className={`relative p-1 font-medium  hover:text-primary-600 focus:text-primary-600 dark:text-gray-100 sm:p-4 ${
+                    selectedLink == link.href ? 'text-primary-600' : 'text-gray-900'
                   }`}
                 >
                   {link.title}
                   {selectedLink == link.href ? (
                     <motion.div
                       layoutId="underline"
-                      className="absolute top-3 left-0 h-7 w-full bg-slate-200 rounded-md -z-10"
+                      className="absolute top-3 left-0 h-7 w-full bg-primary-400/10 dark:bg-primary-600 rounded-md -z-10"
                     />
                   ) : null}
                 </Link>

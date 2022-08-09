@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
-
+import IconMenu from '~icons/heroicons-outline/menu.jsx'
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
 
@@ -25,18 +25,7 @@ const MobileNav = () => {
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
+        <IconMenu className=" w-6 h-6 text-gray-900 dark:text-gray-100" />
       </button>
       <div
         className={`fixed top-0 left-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${

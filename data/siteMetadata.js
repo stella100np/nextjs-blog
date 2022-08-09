@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'stella100np`s Advanced front-end blog',
+  title: 'stella100np`s Advanced FE blog',
   author: 'Takasaki Chidori',
-  headerTitle: 'Advanced front-end blog',
+  headerTitle: 'Advanced FE blog',
   description: 'intro',
   language: 'en-us',
   theme: 'system', // system, dark or light
@@ -12,6 +12,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'zgy1453373421@outlook.com',
   github: 'https://github.com/stella100np',
+  discord: 'https://discord.com/channels/961109179857272913/961109179857272916',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
