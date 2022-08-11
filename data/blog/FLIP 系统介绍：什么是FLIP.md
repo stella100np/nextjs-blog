@@ -49,7 +49,7 @@ const player = el.animate(
 player.addEventListener('finish', tidyUpAnimations)
 ```
 
-看起来十分的简单，但是这里有个问题，为什么在进行一些 js 操作之后，立即进行元素位置的获取，就会得到新的位置，而不是旧的位置？
+看起来十分地简单，但是这里有个问题，为什么在进行一些 js 操作之后，立即进行元素位置的获取，就会得到新的位置，而不是旧的位置？
 
 ### FLIP 深层原理
 
