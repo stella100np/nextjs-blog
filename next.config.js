@@ -11,7 +11,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src giscus.app
+  frame-src https://1-3-2-sandpack.codesandbox.io/;
 `
 
 const securityHeaders = [
